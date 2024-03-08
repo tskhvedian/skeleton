@@ -4,9 +4,9 @@ import { Outlet } from "react-router-dom";
 
 const RootLayout = () => {
   return (
-    <div>
+    <div className="flex flex-col w-full gap-20">
       <TopBar />
-      <section className="flex flex-1 h-full">
+      <section className="h-[280px] flex flex-col bg-gray-100 rounded">
         <Outlet />
       </section>
     </div>
